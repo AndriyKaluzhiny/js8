@@ -1,0 +1,18 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-header {
+    cursor: pointer;
+}
+
+#menu-block {
+    display: none;
+    font-weight: bold;
+}
+
+.menu-item {
+    cursor: pointer;
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu">
+        <span class="menu-header" onmousedown="headerOnClick()">Університет</span>
+        <div id="menu-block">
+            <span class="menu-item">кафедра ІСМ</span>
+            <span class="menu-item">кафедра ЕСМ</span>
+            <span class="menu-item">кафедра політології</span>
+        </div>
+    </div>
+
+
+    <script>
+        function headerOnClick() {
+            let elem = document.getElementById('menu-block');
+
+            if (elem.style.display == 'none') {
+                elem.style.display = 'flex';
+                elem.style.flexDirection = 'column';
+            } else {
+                elem.style.display = 'none';
+            }
+        }</script>
+</body>
+
+</html>
